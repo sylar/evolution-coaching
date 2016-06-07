@@ -3,13 +3,15 @@ rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
+templates    = require 'client-templates'
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
     js_pipeline(files: ['assets/js/*.coffee', 'assets/js/vendor/**'], out: 'js/build.js', minify: true, hash: true),
-    css_pipeline(files: ['assets/css/*.styl', 'assets/css/vendor/**'], out: 'css/build.css', minify: true, hash: true)
+    css_pipeline(files: ['assets/css/*.styl', 'assets/css/vendor/**'], out: 'css/build.css', minify: true, hash: true),
+    templates(base: 'views/templates')
   ]
 
   stylus:

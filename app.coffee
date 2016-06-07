@@ -4,7 +4,6 @@ autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
 records      = require 'roots-records'
-config       = require 'roots-config'
 templates    = require 'client-templates'
 
 module.exports =
@@ -13,7 +12,6 @@ module.exports =
   extensions: [
     js_pipeline(files: ['assets/js/*.coffee', 'assets/js/vendor/**']),
     css_pipeline(files: ['assets/css/*.styl', 'assets/css/vendor/**']),
-    config(test: 'lala'),
     templates(base: 'views/templates')
   ]
 

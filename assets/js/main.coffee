@@ -23,10 +23,10 @@ menuItems = [{
 page = document.location.pathname.slice(1)
 
 $('#navbar').html(templates.navbar({
-    logo: '/img/Logos/logo-' + page + '.svg',
-    logotype: '/img/Logos/logotype-' + page + '.svg',
+    logo: '/img/Logos/logo-' + (page || 'who') + '.svg',
+    logotype: '/img/Logos/logotype-' + (page || 'who') + '.svg',
     menuItems: menuItems,
-    className: page
+    className: (page || 'who')
   })
 )
 
