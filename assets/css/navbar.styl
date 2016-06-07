@@ -1,8 +1,82 @@
 #navbar
+  border-bottom 4px solid rgba(0, 0, 0, 0.1)
+  text-align center
+  padding-bottom 10px
+
   .logo
-    width 60px
+    width 80px
     display inline-block
+    padding 0 10px
 
   .logotype
-    width 400px
+    width 300px
     display inline-block
+    padding 0 10px
+    margin-left 25px
+
+  .menu
+    display inline-block
+    vertical-align middle
+    margin-left 40px
+
+    ul
+      display inline-block
+      vertical-align middle
+      padding 0
+
+    .link
+      display inline-block
+      list-style none
+      margin 0 10px
+      font-weight bold
+
+      a
+        color #8E8E8D
+        text-decoration none
+        padding-bottom 5px
+        font-size 20px
+
+        &:hover
+          border-bottom 4px solid #8E8E8D
+
+    .switch
+      display inline-block
+      font-size 20px
+      color #8E8E8D
+      vertical-align middle
+      font-weight bold
+      cursor pointer
+      margin-left 40px
+
+@media screen and (max-width: 963px)
+  #navbar
+    .logo
+      width 60px
+
+    .logotype
+      width 270px
+
+    .menu
+      margin-left 20px
+
+      a, .switch
+        font-size 20px
+
+
+
+@media screen and (max-width: 852px)
+  #navbar
+    text-align center
+
+    .logo
+      width 45px
+
+    .logotype
+      width 250px
+      margin-left 15px
+
+    .menu
+      padding 0
+
+      .link a, .switch
+        font-size 15px

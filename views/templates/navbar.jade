@@ -1,3 +1,9 @@
 .navbar
   .logo: img(src= logo)
-  .logotype: img(src= logotype )
+  .logotype: img(src= logotype)
+  .menu
+    ul
+      each item in menuItems
+        li.link
+          a(href= item.url) #{item.name}
+    .switch Eng/Fr
