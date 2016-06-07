@@ -37,7 +37,10 @@
   font-size: 20px;
 }
 #navbar .menu .link a:hover {
-  border-bottom: 4px solid #8e8e8d;
+  border-bottom: 4px solid;
+}
+#navbar .menu .link a.active {
+  border-bottom: 4px solid;
 }
 #navbar .menu .switch {
   display: inline-block;
@@ -277,6 +280,22 @@ body {
   max-width: 1000px;
   padding: 0 30px;
   margin: 0 auto;
+}
+.who {
+  color: #8baf1a !important;
+  border-color: #8baf1a !important;
+}
+.what {
+  color: #5377b9 !important;
+  border-color: #5377b9 !important;
+}
+.how {
+  color: #eb6477 !important;
+  border-color: #eb6477 !important;
+}
+.contact {
+  color: #c078af !important;
+  border-color: #c078af !important;
 }
 @media screen and (max-width: 884px) {
   #content {
