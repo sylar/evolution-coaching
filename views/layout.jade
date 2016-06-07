@@ -11,8 +11,13 @@ html
     != css()
 
   body
-    include templates/navbar.jade
-
-    block content
-
+    
+    #content
+      #navbar
+      block content
+      
+    script(type="application/javascript", src="/js/vendor/1-jquery-1.12.4.min.js")
+    script(type="text/javascript", src="/js/templates.js")
+      
+    != config_js()
     != js()
