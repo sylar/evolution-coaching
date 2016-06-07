@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/css/navbar.styl"],"names":[],"mappings":"AACE;EACE,YAAA;EACA,sBAAA;;AAEF;EACE,aAAA;EACA,sBAAA","sourcesContent":["#navbar\n  .logo\n    width 60px\n    display inline-block\n\n  .logotype\n    width 400px\n    display inline-block\n"]}
