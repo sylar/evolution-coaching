@@ -1,28 +1,38 @@
 (function() {
-  var menuItems;
+  var menuItems, page;
 
   menuItems = [
     {
       name: 'Who',
-      url: '/who'
+      url: '/who',
+      id: 'id-who'
     }, {
       name: 'What',
-      url: '/what'
+      url: '/what',
+      id: 'id-what'
     }, {
       name: 'How',
-      url: '/how'
+      url: '/how',
+      id: 'id-how'
     }, {
       name: 'Contact',
-      url: '/contact'
+      url: '/contact',
+      id: 'id-contact'
     }
   ];
 
+  page = document.location.pathname.slice(1);
+
   $('#navbar').html(templates.navbar({
-    location: document.location.pathname,
-    logo: '/img/Logos/logo-who.svg',
-    logotype: '/img/Logos/logotype-who.svg',
-    menuItems: menuItems
+    logo: '/img/Logos/logo-' + page + '.svg',
+    logotype: '/img/Logos/logotype-' + page + '.svg',
+    menuItems: menuItems,
+    className: page
   }));
+
+  $('#content').addClass(page + '-page');
+
+  $('.id-' + page).addClass('active');
 
 }).call(this);
 

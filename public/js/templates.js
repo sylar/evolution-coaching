@@ -3,7 +3,7 @@
 var buf = [];
 var jade_mixins = {};
 var jade_interp;
-;var locals_for_with = (locals || {});(function (logo, logotype, menuItems, undefined) {
+;var locals_for_with = (locals || {});(function (className, logo, logotype, menuItems, undefined) {
 buf.push("<div class=\"navbar\"><div class=\"logo\"><img" + (jade.attr("src", logo, true, false)) + "/></div><div class=\"logotype\"><img" + (jade.attr("src", logotype, true, false)) + "/></div><div class=\"menu\"><ul>");
 // iterate menuItems
 ;(function(){
@@ -13,7 +13,7 @@ buf.push("<div class=\"navbar\"><div class=\"logo\"><img" + (jade.attr("src", lo
     for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
       var item = $$obj[$index];
 
-buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + ">" + (jade.escape((jade_interp = item.name) == null ? '' : jade_interp)) + "</a></li>");
+buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + (jade.cls([className + ' ' + item.id], [true])) + ">" + (jade.escape((jade_interp = item.name) == null ? '' : jade_interp)) + "</a></li>");
     }
 
   } else {
@@ -21,12 +21,12 @@ buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + 
     for (var $index in $$obj) {
       $$l++;      var item = $$obj[$index];
 
-buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + ">" + (jade.escape((jade_interp = item.name) == null ? '' : jade_interp)) + "</a></li>");
+buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + (jade.cls([className + ' ' + item.id], [true])) + ">" + (jade.escape((jade_interp = item.name) == null ? '' : jade_interp)) + "</a></li>");
     }
 
   }
 }).call(this);
 
-buf.push("</ul><div class=\"switch\">Eng/Fr</div></div></div>");}.call(this,"logo" in locals_for_with?locals_for_with.logo:typeof logo!=="undefined"?logo:undefined,"logotype" in locals_for_with?locals_for_with.logotype:typeof logotype!=="undefined"?logotype:undefined,"menuItems" in locals_for_with?locals_for_with.menuItems:typeof menuItems!=="undefined"?menuItems:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
+buf.push("</ul><div class=\"switch\">Eng/Fr</div></div></div>");}.call(this,"className" in locals_for_with?locals_for_with.className:typeof className!=="undefined"?className:undefined,"logo" in locals_for_with?locals_for_with.logo:typeof logo!=="undefined"?logo:undefined,"logotype" in locals_for_with?locals_for_with.logotype:typeof logotype!=="undefined"?logotype:undefined,"menuItems" in locals_for_with?locals_for_with.menuItems:typeof menuItems!=="undefined"?menuItems:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
 }};
 });

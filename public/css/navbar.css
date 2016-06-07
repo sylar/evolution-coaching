@@ -37,7 +37,10 @@
   font-size: 20px;
 }
 #navbar .menu .link a:hover {
-  border-bottom: 4px solid #8e8e8d;
+  border-bottom: 4px solid;
+}
+#navbar .menu .link a.active {
+  border-bottom: 4px solid;
 }
 #navbar .menu .switch {
   display: inline-block;

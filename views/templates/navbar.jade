@@ -5,5 +5,5 @@
     ul
       each item in menuItems
         li.link
-          a(href= item.url) #{item.name}
+          a(class= className + ' ' + item.id, href= item.url ) #{item.name}
     .switch Eng/Fr
