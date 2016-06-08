@@ -20,7 +20,7 @@ menuItems = [{
 
   }]
 
-page = document.location.pathname.slice(1)
+page = document.location.pathname.split('/')[document.location.pathname.split('/').length - 1]
 
 $('#navbar').html(templates.navbar({
     logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
