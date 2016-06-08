@@ -1,21 +1,21 @@
 menuItems = [{
     name: 'Who',
-    url: '/who',
+    url: 'who',
     id: 'id-who'
 
   },{
     name: 'What',
-    url:  '/what',
+    url:  'what',
     id: 'id-what'
 
   },{
     name: 'How',
-    url: '/how',
+    url: 'how',
     id: 'id-how'
 
   },{
     name: 'Contact',
-    url: '/contact',
+    url: 'contact',
     id: 'id-contact'
 
   }]
@@ -23,8 +23,8 @@ menuItems = [{
 page = document.location.pathname.slice(1)
 
 $('#navbar').html(templates.navbar({
-    logo: '/img/Logos/logo-' + (page || 'who') + '.svg',
-    logotype: '/img/Logos/logotype-' + (page || 'who') + '.svg',
+    logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
+    logotype: 'img/Logos/logotype-' + (page || 'who') + '.svg',
     menuItems: menuItems,
     className: (page || 'who')
   })
