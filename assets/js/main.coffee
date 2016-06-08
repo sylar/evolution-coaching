@@ -24,7 +24,7 @@ page = document.location.pathname.split('/')[document.location.pathname.split('/
 console.log page
 
 if (!page)
-  document.location.pathname += '/who'
+  document.location.pathname += 'who'
 
 $('#navbar').html(templates.navbar({
     logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
