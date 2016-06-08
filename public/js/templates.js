@@ -27,6 +27,6 @@ buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + 
   }
 }).call(this);
 
-buf.push("</ul><div class=\"switch\">Eng/Fr</div></div></div>");}.call(this,"className" in locals_for_with?locals_for_with.className:typeof className!=="undefined"?className:undefined,"logo" in locals_for_with?locals_for_with.logo:typeof logo!=="undefined"?logo:undefined,"logotype" in locals_for_with?locals_for_with.logotype:typeof logotype!=="undefined"?logotype:undefined,"menuItems" in locals_for_with?locals_for_with.menuItems:typeof menuItems!=="undefined"?menuItems:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
+buf.push("</ul><div style=\"display: none\" class=\"switch\">Eng/Fr</div></div></div>");}.call(this,"className" in locals_for_with?locals_for_with.className:typeof className!=="undefined"?className:undefined,"logo" in locals_for_with?locals_for_with.logo:typeof logo!=="undefined"?logo:undefined,"logotype" in locals_for_with?locals_for_with.logotype:typeof logotype!=="undefined"?logotype:undefined,"menuItems" in locals_for_with?locals_for_with.menuItems:typeof menuItems!=="undefined"?menuItems:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
 }};
 });

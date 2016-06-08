@@ -2,4 +2,19 @@ extends layout
 
 block content
   
-  h1 Contact Page.
+  .title.contact: span
+    span.fr Comment nous contacter
+  
+  .description
+    .contact-info
+      p email: 
+        a(href='mailto:info@evolution-coaching.org') info@evolution-coaching.org
+      p Phone:
+        ul 
+          li +44 (0) 7971 534 005
+          li +44 (0) 6971 638 895
+
+    .contact-img
+      img(src='img/header icons/contact-icon.svg')
+  
+  .footer

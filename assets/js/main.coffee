@@ -1,15 +1,15 @@
 menuItems = [{
-    name: 'Who',
+    name: 'Qui',
     url: 'who',
     id: 'id-who'
 
   },{
-    name: 'What',
+    name: 'Quelle',
     url:  'what',
     id: 'id-what'
 
   },{
-    name: 'How',
+    name: 'Comment',
     url: 'how',
     id: 'id-how'
 
