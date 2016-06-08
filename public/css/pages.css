@@ -30,5 +30,69 @@
     width: 100%;
   }
 }
+.what-page .title {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0;
+}
+.what-page .title span {
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+}
+.what-page .description .mini-title {
+  font-size: 40px;
+}
+.what-page .description .item {
+  margin: 40px 0;
+}
+.what-page .description .mini-desc .mini-desc-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+.what-page .description .mini-desc .mini-desc-content ul {
+  padding-left: 15px;
+}
+.what-page .description .mini-desc .mini-desc-content ul li {
+  margin-bottom: 10px;
+}
+.what-page .description .mini-desc .mini-desc-img {
+  display: inline-block;
+  width: 45%;
+  vertical-align: middle;
+  text-align: center;
+}
+.what-page .description .mini-desc .mini-desc-img img {
+  width: 250px;
+}
+.what-page .description .mini-desc .mini-desc-img.second {
+  text-align: left;
+  padding-left: 20px;
+}
+.what-page .description .mini-desc .mini-desc-img.second img {
+  width: 320px;
+}
+.what-page .description .mini-desc .mini-desc-img.second-mobile {
+  display: none;
+}
+.what-page .footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #5377b9;
+  margin-top: 250px;
+  height: 150px;
+}
+@media screen and (max-width: 852px) {
+  .what-page .second {
+    display: none !important;
+  }
+  .what-page .description .mini-desc .mini-desc-img.second-mobile {
+    display: block !important;
+  }
+  .what-page .description .mini-desc .mini-desc-content,
+  .what-page .description .mini-desc .mini-desc-img {
+    width: 100% !important;
+  }
+}
 
  /*# sourceMappingURL=pages.css.map */

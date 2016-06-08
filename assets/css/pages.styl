@@ -30,3 +30,71 @@
   @media screen and (max-width: 852px)
       .description
         width 100%
+
+.what-page
+
+  .title
+    text-align center
+    font-size 40px
+    margin 50px 0
+
+    span
+      padding-bottom 10px
+      border-bottom 3px solid
+
+  .description
+    .mini-title
+      font-size 40px
+
+    .item
+      margin 40px 0
+
+    .mini-desc
+
+      .mini-desc-content
+        display inline-block
+        vertical-align middle
+        width 45%
+
+        ul
+          padding-left 15px
+
+          li
+            margin-bottom 10px
+
+      .mini-desc-img
+        display inline-block
+        width 45%
+        vertical-align middle
+        text-align center
+
+        img
+          width 250px
+
+        &.second
+          text-align left
+          padding-left 20px
+
+          img
+            width 320px
+
+        &.second-mobile
+          display none
+
+  .footer
+    max-width 1000px
+    margin 0 auto
+    background-color #5377b9
+    margin-top 250px
+    height 150px
+
+  @media screen and (max-width: 852px)
+    .second
+      display none !important
+
+    .description .mini-desc .mini-desc-img.second-mobile
+      display block !important
+
+    .description .mini-desc .mini-desc-content,
+    .description .mini-desc .mini-desc-img
+      width 100% !important
