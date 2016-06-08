@@ -23,6 +23,9 @@ menuItems = [{
 page = document.location.pathname.split('/')[document.location.pathname.split('/').length - 1]
 console.log page
 
+if (!page)
+  document.location.pathname += '/who'
+
 $('#navbar').html(templates.navbar({
     logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
     logotype: 'img/Logos/logotype-' + (page || 'who') + '.svg',
