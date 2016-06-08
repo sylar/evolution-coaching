@@ -2,6 +2,8 @@
   border-bottom: 4px solid rgba(0,0,0,0.1);
   text-align: center;
   padding-bottom: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 #navbar .logo {
   width: 80px;
@@ -83,6 +85,38 @@
   #navbar .menu .link a,
   #navbar .menu .switch {
     font-size: 15px;
+  }
+}
+.who-page .title {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0;
+}
+.who-page .title span {
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+}
+.who-page .description {
+  width: 55%;
+  padding-top: 20px;
+  color: #80807f;
+}
+.who-page .description .text {
+  text-indent: 40px;
+}
+.who-page .description .list li {
+  margin: 10px 0;
+}
+.who-page .footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #8baf1a;
+  margin-top: 250px;
+  height: 150px;
+}
+@media screen and (max-width: 852px) {
+  .who-page .description {
+    width: 100%;
   }
 }
 html {
@@ -274,7 +308,7 @@ body {
   font-size-adjust: auto;
 }
 body {
-  padding: 30px;
+  padding: 30px 30px 0 30px;
 }
 #content {
   max-width: 1000px;
