@@ -30,52 +30,65 @@
     width: 100%;
   }
 }
-.what-page .title {
+.what-page .title,
+.how-page .title {
   text-align: center;
   font-size: 40px;
   margin: 50px 0;
 }
-.what-page .title span {
+.what-page .title span,
+.how-page .title span {
   padding-bottom: 10px;
   border-bottom: 3px solid;
 }
-.what-page .description .mini-title {
+.what-page .description .mini-title,
+.how-page .description .mini-title {
   font-size: 40px;
 }
-.what-page .description .item {
+.what-page .description .item,
+.how-page .description .item {
   margin: 40px 0;
 }
-.what-page .description .mini-desc .mini-desc-content {
+.what-page .description .mini-desc .mini-desc-content,
+.how-page .description .mini-desc .mini-desc-content {
   display: inline-block;
   vertical-align: middle;
   width: 45%;
 }
-.what-page .description .mini-desc .mini-desc-content ul {
+.what-page .description .mini-desc .mini-desc-content ul,
+.how-page .description .mini-desc .mini-desc-content ul {
   padding-left: 15px;
 }
-.what-page .description .mini-desc .mini-desc-content ul li {
+.what-page .description .mini-desc .mini-desc-content ul li,
+.how-page .description .mini-desc .mini-desc-content ul li {
   margin-bottom: 10px;
 }
-.what-page .description .mini-desc .mini-desc-img {
+.what-page .description .mini-desc .mini-desc-img,
+.how-page .description .mini-desc .mini-desc-img {
   display: inline-block;
   width: 45%;
   vertical-align: middle;
   text-align: center;
 }
-.what-page .description .mini-desc .mini-desc-img img {
+.what-page .description .mini-desc .mini-desc-img img,
+.how-page .description .mini-desc .mini-desc-img img {
   width: 250px;
 }
-.what-page .description .mini-desc .mini-desc-img.second {
+.what-page .description .mini-desc .mini-desc-img.second,
+.how-page .description .mini-desc .mini-desc-img.second {
   text-align: left;
   padding-left: 20px;
 }
-.what-page .description .mini-desc .mini-desc-img.second img {
+.what-page .description .mini-desc .mini-desc-img.second img,
+.how-page .description .mini-desc .mini-desc-img.second img {
   width: 320px;
 }
-.what-page .description .mini-desc .mini-desc-img.second-mobile {
+.what-page .description .mini-desc .mini-desc-img.second-mobile,
+.how-page .description .mini-desc .mini-desc-img.second-mobile {
   display: none;
 }
-.what-page .footer {
+.what-page .footer,
+.how-page .footer {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #5377b9;
@@ -83,16 +96,29 @@
   height: 150px;
 }
 @media screen and (max-width: 852px) {
-  .what-page .second {
+  .what-page .second,
+  .how-page .second {
     display: none !important;
   }
-  .what-page .description .mini-desc .mini-desc-img.second-mobile {
+  .what-page .description .mini-desc .mini-desc-img.second-mobile,
+  .how-page .description .mini-desc .mini-desc-img.second-mobile {
     display: block !important;
   }
   .what-page .description .mini-desc .mini-desc-content,
-  .what-page .description .mini-desc .mini-desc-img {
+  .how-page .description .mini-desc .mini-desc-content,
+  .what-page .description .mini-desc .mini-desc-img,
+  .how-page .description .mini-desc .mini-desc-img {
     width: 100% !important;
   }
+}
+.how-page .description .item .mini-desc .mini-desc-img img {
+  width: 200px;
+}
+.how-page .description .item .mini-desc .mini-desc-img.second {
+  padding-left: 90px;
+}
+.how-page .footer {
+  background-color: #eb6477;
 }
 
  /*# sourceMappingURL=pages.css.map */
