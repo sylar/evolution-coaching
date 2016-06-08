@@ -9,8 +9,8 @@ module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
-    js_pipeline(files: ['assets/js/*.coffee', 'assets/js/vendor/*.js'], out: 'js/build.js', minify: true, hash: true),
-    css_pipeline(files: ['assets/css/*.styl', 'assets/css/vendor/*.css'], out: 'css/build.css', minify: true, hash: true),
+    js_pipeline(files: ['assets/js/*.*', 'assets/js/vendor/*.js'], out: 'js/build.js', minify: true, hash: true),
+    css_pipeline(files: ['assets/css/*.*', 'assets/css/vendor/*.css'], out: 'css/build.css', minify: true, hash: true),
     templates(base: 'views/templates')
   ]
 
