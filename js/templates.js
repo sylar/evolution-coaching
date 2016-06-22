@@ -4,7 +4,7 @@ var buf = [];
 var jade_mixins = {};
 var jade_interp;
 ;var locals_for_with = (locals || {});(function (className, logo, logotype, menuItems, undefined) {
-buf.push("<div class=\"navbar\"><div class=\"logo\"><img" + (jade.attr("src", logo, true, false)) + "/></div><div class=\"logotype\"><img" + (jade.attr("src", logotype, true, false)) + "/></div><div class=\"menu\"><ul>");
+buf.push("<div class=\"navbar\"><a href=\"/\"><div class=\"logo\"><img" + (jade.attr("src", logo, true, false)) + "/></div><div class=\"logotype\"><img" + (jade.attr("src", logotype, true, false)) + "/></div></a><div class=\"menu\"><ul>");
 // iterate menuItems
 ;(function(){
   var $$obj = menuItems;
