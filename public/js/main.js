@@ -23,16 +23,20 @@
 
   page = document.location.pathname.split('/')[document.location.pathname.split('/').length - 1];
 
-  console.log(page);
-
   $('#navbar').html(templates.navbar({
-    logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
-    logotype: 'img/Logos/logotype-' + (page || 'who') + '.svg',
+    logo: '/img/Logos/logo-' + (page || 'who') + '.svg',
+    logotype: '/img/Logos/logotype-' + (page || 'who') + '.svg',
     menuItems: menuItems,
     className: page || 'who'
   }));
 
+  if (!page) {
+    page = 'home';
+  }
+
   $('#content').addClass(page + '-page');
+
+  $('#navbar').addClass(page + '-page-navbar');
 
   $('.id-' + page).addClass('active');
 
