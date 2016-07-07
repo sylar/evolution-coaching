@@ -45,8 +45,8 @@ language = localStorage.getItem('lang')
 console.log('language', language)
 
 $('#navbar').html(templates.navbar({
-    logo: '/img/Logos/logo-' + (page || 'who') + '.svg',
-    logotype: '/img/Logos/logotype-' + (page || 'who') + '.svg',
+    logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
+    logotype: 'img/Logos/logotype-' + (page || 'who') + '.svg',
     menuItems: menuItems,
     className: (page || 'who'),
     language: language
