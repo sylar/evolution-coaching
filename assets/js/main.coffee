@@ -3,7 +3,7 @@ menuItems = [{
       fr: 'Qui',
       en: "Who"
     },
-    url: 'who',
+    url: 'who.html',
     id: 'id-who'
 
   },{
@@ -11,7 +11,7 @@ menuItems = [{
       fr: 'Quelle',
       en: 'What'
     },
-    url:  'what',
+    url:  'what.html',
     id: 'id-what'
 
   },{
@@ -19,14 +19,14 @@ menuItems = [{
       fr: 'Comment',
       en: 'How'
     },
-    url: 'how',
+    url: 'how.html',
     id: 'id-how'
   },{
     name: {
       fr: 'Contact',
       en: 'Contact'
     },
-    url: 'contact',
+    url: 'contact.html',
     id: 'id-contact'
 
   }]
