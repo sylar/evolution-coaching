@@ -50,13 +50,11 @@
   font-size: 20px;
   color: #8e8e8d;
   vertical-align: middle;
-  font-weight: bold;
   cursor: pointer;
   margin-left: 40px;
 }
 #navbar.home-page-navbar {
   border: none;
-  background-color: #f8f8ff;
 }
 @media screen and (max-width: 963px) {
   #navbar .logo {

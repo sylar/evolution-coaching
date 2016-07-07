@@ -6,5 +6,10 @@
     ul
       each item in menuItems
         li.link
-          a(class= className + ' ' + item.id, href= item.url ) #{item.name}
-    .switch(style='display: none') Eng/Fr
+          a(class= className + ' ' + item.id, href= item.url ) 
+            .fr #{item.name.fr}
+            .en #{item.name.en}
+    .switch(class= className)
+      span.lang-en Eng
+      span /
+      span.lang-fr Fr

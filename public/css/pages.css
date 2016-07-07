@@ -8,15 +8,22 @@
   border-bottom: 3px solid;
 }
 .who-page .description {
-  width: 55%;
+  width: 49%;
   padding-top: 20px;
   color: #80807f;
+  vertical-align: middle;
+  display: inline-block;
 }
 .who-page .description .text {
   text-indent: 40px;
 }
 .who-page .description .list li {
   margin: 10px 0;
+}
+.who-page .who-image {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
 }
 .who-page .footer {
   max-width: 1000px;
@@ -49,11 +56,15 @@
 .how-page .description .item {
   margin: 40px 0;
 }
+.what-page .description .mini-desc,
+.how-page .description .mini-desc {
+  padding: 0 30px;
+}
 .what-page .description .mini-desc .mini-desc-content,
 .how-page .description .mini-desc .mini-desc-content {
   display: inline-block;
   vertical-align: middle;
-  width: 45%;
+  width: 49%;
 }
 .what-page .description .mini-desc .mini-desc-content ul,
 .how-page .description .mini-desc .mini-desc-content ul {
@@ -66,7 +77,7 @@
 .what-page .description .mini-desc .mini-desc-img,
 .how-page .description .mini-desc .mini-desc-img {
   display: inline-block;
-  width: 45%;
+  width: 50%;
   vertical-align: middle;
   text-align: center;
 }
@@ -149,11 +160,16 @@
 .contact-page .description .contact-img {
   width: 200px;
 }
+.contact-page .contact-street {
+  margin-top: 20px;
+}
+.contact-page .contact-street img {
+  width: 100%;
+}
 .contact-page .footer {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #c078af;
-  margin-top: 250px;
   height: 150px;
 }
 @media screen and (max-width: 852px) {

@@ -13,7 +13,7 @@ buf.push("<div class=\"navbar\"><a href=\"/\"><div class=\"logo\"><img" + (jade.
     for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
       var item = $$obj[$index];
 
-buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + (jade.cls([className + ' ' + item.id], [true])) + ">" + (jade.escape((jade_interp = item.name) == null ? '' : jade_interp)) + "</a></li>");
+buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + (jade.cls([className + ' ' + item.id], [true])) + "> <div class=\"fr\">" + (jade.escape((jade_interp = item.name.fr) == null ? '' : jade_interp)) + "</div><div class=\"en\">" + (jade.escape((jade_interp = item.name.en) == null ? '' : jade_interp)) + "</div></a></li>");
     }
 
   } else {
@@ -21,12 +21,12 @@ buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + 
     for (var $index in $$obj) {
       $$l++;      var item = $$obj[$index];
 
-buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + (jade.cls([className + ' ' + item.id], [true])) + ">" + (jade.escape((jade_interp = item.name) == null ? '' : jade_interp)) + "</a></li>");
+buf.push("<li class=\"link\"><a" + (jade.attr("href", item.url, true, false)) + (jade.cls([className + ' ' + item.id], [true])) + "> <div class=\"fr\">" + (jade.escape((jade_interp = item.name.fr) == null ? '' : jade_interp)) + "</div><div class=\"en\">" + (jade.escape((jade_interp = item.name.en) == null ? '' : jade_interp)) + "</div></a></li>");
     }
 
   }
 }).call(this);
 
-buf.push("</ul><div style=\"display: none\" class=\"switch\">Eng/Fr</div></div></div>");}.call(this,"className" in locals_for_with?locals_for_with.className:typeof className!=="undefined"?className:undefined,"logo" in locals_for_with?locals_for_with.logo:typeof logo!=="undefined"?logo:undefined,"logotype" in locals_for_with?locals_for_with.logotype:typeof logotype!=="undefined"?logotype:undefined,"menuItems" in locals_for_with?locals_for_with.menuItems:typeof menuItems!=="undefined"?menuItems:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
+buf.push("</ul><div" + (jade.cls(['switch',className], [null,true])) + "><span class=\"lang-en\">Eng</span><span>/</span><span class=\"lang-fr\">Fr</span></div></div></div>");}.call(this,"className" in locals_for_with?locals_for_with.className:typeof className!=="undefined"?className:undefined,"logo" in locals_for_with?locals_for_with.logo:typeof logo!=="undefined"?logo:undefined,"logotype" in locals_for_with?locals_for_with.logotype:typeof logotype!=="undefined"?logotype:undefined,"menuItems" in locals_for_with?locals_for_with.menuItems:typeof menuItems!=="undefined"?menuItems:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
 }};
 });
