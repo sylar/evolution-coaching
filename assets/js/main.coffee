@@ -33,9 +33,9 @@ menuItems = [{
 
 
 page = document.location.pathname.split('/')[document.location.pathname.split('/').length - 1]
-if (page.indexOf('.') > -1) {
+if (page.indexOf('.') > -1)
   page = page.split('.')[0]
-}
+
 
 if (!localStorage.lang)
   localStorage.setItem('lang', 'en')
