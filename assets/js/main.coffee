@@ -42,7 +42,6 @@ if (!localStorage.lang)
 
 language = localStorage.getItem('lang')
 
-console.log('language', language)
 
 $('#navbar').html(templates.navbar({
     logo: 'img/Logos/logo-' + (page || 'who') + '.svg',
@@ -54,9 +53,6 @@ $('#navbar').html(templates.navbar({
 )
 
 $('.' + language).show();
-
-$('#navbar .menu .switch').on 'langchange', (e) ->
-  console.log e
 
 $('#navbar .menu .switch').trigger('lang::change')
 $('#navbar .menu .switch').click ->
