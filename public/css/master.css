@@ -55,9 +55,6 @@
   cursor: pointer;
   margin-left: 40px;
 }
-#navbar.home-page-navbar {
-  background-color: #f8f8ff;
-}
 @media screen and (max-width: 963px) {
   #navbar .logo {
     width: 60px;
