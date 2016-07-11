@@ -5,8 +5,8 @@
   .menu
     ul
       each item in menuItems
-        li.link
-          a(class= className + ' ' + item.id, href= item.url ) 
+        li.link(class= className + ' ' + item.id)
+          a(href= item.url ) 
             .fr #{item.name.fr}
             .en #{item.name.en}
     .switch(class= className)
