@@ -5,13 +5,21 @@
 normalize-css()
 base()
 
+@font-face
+  font-family 'AvenirLTStd-Medium'
+  src url('webfonts/31A217_0_0.eot')
+  src url('webfonts/31A217_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31A217_0_0.woff2') format('woff2'),url('webfonts/31A217_0_0.woff') format('woff'),url('webfonts/31A217_0_0.ttf') format('truetype')
+
+
+
 body
-  font-family 'Nunito', sans-serif !important
+  font-family 'AvenirLTStd-Medium', sans-serif !important
   padding 0 30px 0 30px
 
 #content
   max-width 1000px
   margin 0 auto
+  padding-top 122px
 
 .who, .who a
   color #8baf1a !important
@@ -63,6 +71,12 @@ body
 
 .show
   display block
+
+.footer
+  background-image url("/img/Logos/footer.svg")
+  background-repeat no-repeat
+  background-size contain
+  background-position center
 
 @media screen and (max-width: 884px)
   #content
