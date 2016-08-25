@@ -8,7 +8,7 @@ menuItems = [{
 
   },{
     name: {
-      fr: 'Quelle',
+      fr: 'Quoi',
       en: 'What'
     },
     url:  'what.html',
