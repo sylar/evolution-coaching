@@ -62,7 +62,7 @@
     width: 270px;
   }
   #navbar .menu {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   #navbar .menu a,
   #navbar .menu .switch {
@@ -134,6 +134,7 @@
 .what-page .description .mini-title,
 .how-page .description .mini-title {
   font-size: 40px;
+  text-align: center;
 }
 .what-page .description .item,
 .how-page .description .item {
@@ -195,6 +196,20 @@
   .what-page .description .mini-desc .mini-desc-img,
   .how-page .description .mini-desc .mini-desc-img {
     width: 100% !important;
+  }
+  .what-page .mini-desc,
+  .how-page .mini-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .what-page .mini-desc-content,
+  .how-page .mini-desc-content {
+    margin-top: 15px;
   }
 }
 .how-page .description .item .mini-desc .mini-desc-img img {
@@ -533,7 +548,7 @@ body {
 }
 @media screen and (max-width: 884px) {
   #content {
-    padding: 0;
+    margin: 5px;
   }
 }
 .home-page-footer,
