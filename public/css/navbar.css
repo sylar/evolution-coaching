@@ -62,7 +62,7 @@
     width: 270px;
   }
   #navbar .menu {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   #navbar .menu a,
   #navbar .menu .switch {
