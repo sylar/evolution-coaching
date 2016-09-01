@@ -115,13 +115,6 @@
   display: inline-block;
   text-align: center;
 }
-.who-page .footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #8baf1a;
-  margin-top: 250px;
-  height: 150px;
-}
 @media screen and (max-width: 852px) {
   .who-page .description {
     width: 100%;
@@ -188,14 +181,6 @@
 .how-page .description .mini-desc .mini-desc-img.second-mobile {
   display: none;
 }
-.what-page .footer,
-.how-page .footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #5377b9;
-  margin-top: 250px;
-  height: 150px;
-}
 @media screen and (max-width: 852px) {
   .what-page .second,
   .how-page .second {
@@ -217,9 +202,6 @@
 }
 .how-page .description .item .mini-desc .mini-desc-img.second {
   padding-left: 90px;
-}
-.how-page .footer {
-  background-color: #eb6477;
 }
 .contact-page .phone-list {
   margin-top: 0;
@@ -260,12 +242,6 @@
 }
 .contact-page .contact-street img {
   width: 100%;
-}
-.contact-page .footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #c078af;
-  height: 150px;
 }
 @media screen and (max-width: 852px) {
   .contact-page .description .contact-info,
@@ -471,7 +447,6 @@ body {
 }
 body {
   font-family: 'AvenirLTStd-Medium', sans-serif !important;
-  padding: 0 30px 0 30px;
 }
 #content {
   max-width: 1000px;
@@ -546,16 +521,33 @@ body {
 .show {
   display: block;
 }
-.footer {
+#footer {
   background-image: url("/img/Logos/footer.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: inherit;
   background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 200px;
+  height: 150px;
 }
 @media screen and (max-width: 884px) {
   #content {
     padding: 0;
   }
+}
+.home-page-footer,
+.who-page-footer {
+  background-color: #8baf1a;
+}
+.what-page-footer {
+  background-color: #5377b9;
+}
+.how-page-footer {
+  background-color: #eb6477;
+}
+.contact-page-footer {
+  background-color: #c078af;
 }
 
  /*# sourceMappingURL=master.css.map */

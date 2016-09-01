@@ -53,6 +53,10 @@
     language: language
   }));
 
+  $('#footer').html(templates.footer({
+    className: page || 'who'
+  }));
+
   $('.' + language).show();
 
   $('#navbar .menu .switch').trigger('lang::change');
@@ -86,6 +90,8 @@
   $('#content').addClass(page + '-page');
 
   $('#navbar').addClass(page + '-page-navbar');
+
+  $('#footer').addClass(page + '-page-footer');
 
   $('.id-' + page).addClass('active');
 
