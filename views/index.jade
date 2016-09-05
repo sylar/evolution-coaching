@@ -3,16 +3,32 @@ extends layout
 block content
   
   .center(style='color: #8baf1a; margin-top: 70px')
-    h1 English and French business coaching
-    h1 - with a personal touch
+    .en
+      h1 English and French business coaching
+      h1 - with a personal touch
+    .fr
+      h1 Anglais et le coaching d'affaires français
+      h1 - Avec une touche personnelle
   
   .home-video
     video(controls): source(src="videos/video.mp4" type="video/mp4")
       
   .center(style='color: #8baf1a; margin-top: 60px') 
-    h1 "The heart of my profession
-    h1 is to focus on the How, not the What"
-    p My journey has been influenced by meeting with exceptional individuals, training accrediting processes, inspirational speakers, reflective time and personal development journeys on my personal and professional life experiences.
-
+    .en
+      h1 "The heart of my profession
+      h1 is to focus on the How, not the What"
+      p My journey has been influenced by meeting with exceptional individuals, training accrediting processes, inspirational speakers, reflective time and personal development journeys on my personal and professional life experiences.
+    .fr
+      h1 "Au coeur de mon métier de coach et de facilitatrice est le savoir être"
+      p Mon parcours a été influencé par des rencontres, des formations, des processus d'accréditations, des moments d'inspirations, de prise de recul, et d'espace de développement personnel sur les expériences professionnelles et personnelles de ma vie.
+    
+    div(style='margin-top: 100px')
+      .en
+        h1 Personal influences include:
+      .fr
+        h1 Influences personnelles incluent:
+    
+    img(style='width: 100%', src='img/Icons_inspiration_logos.png')
+    
   .footer
     

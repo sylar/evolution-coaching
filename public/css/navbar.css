@@ -12,6 +12,7 @@
           transform: translateX(-50%);
   z-index: 1000;
   background: #fff;
+  margin-bottom: 0px;
 }
 #navbar .logo {
   width: 80px;
@@ -52,7 +53,6 @@
   color: #8e8e8d;
   vertical-align: middle;
   cursor: pointer;
-  margin-left: 40px;
 }
 @media screen and (max-width: 963px) {
   #navbar .logo {
