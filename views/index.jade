@@ -11,7 +11,8 @@ block content
       h1 - Avec une touche personnelle
   
   .home-video
-    video(controls): source(src="videos/video.mp4" type="video/mp4")
+    video(id="really-cool-video" class="video-js vjs-default-skin" controls preload="auto" data-setup='{}')
+      source(src="videos/video.mp4" type="video/mp4")
       
   .center(style='color: #8baf1a; margin-top: 60px') 
     .en
