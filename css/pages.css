@@ -25,6 +25,9 @@
   display: inline-block;
   text-align: center;
 }
+.who-page .who-image img {
+  width: 100%;
+}
 @media screen and (max-width: 852px) {
   .who-page .description {
     width: 100%;
