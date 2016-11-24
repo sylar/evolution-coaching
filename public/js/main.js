@@ -87,6 +87,12 @@
     page = 'home';
   }
 
+  $('.home-page-banner').show();
+
+  if (page !== 'home') {
+    $('.home-page-banner').hide();
+  }
+
   $('#content').addClass(page + '-page');
 
   $('#navbar').addClass(page + '-page-navbar');
