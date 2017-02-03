@@ -3,8 +3,12 @@ extends layout
 block content
 
   .home-video
-    video(controls style="margin: 0 auto")
-      source(src="//github.com/andreiconstantinescu/evolution-coaching/blob/master/assets/videos/video.mp4?raw=true" type="video/mp4")
+    .en
+      video(controls style="margin: 0 auto")
+        source(src="//github.com/andreiconstantinescu/evolution-coaching/blob/master/assets/videos/video.mp4?raw=true" type="video/mp4")
+    .fr
+      video(controls style="margin: 0 auto")
+        source(src="//github.com/andreiconstantinescu/evolution-coaching/blob/master/assets/videos/fr.mp4?raw=true" type="video/mp4")
 
   .center(style='color: #8baf1a; margin-top: 70px')
     .en
