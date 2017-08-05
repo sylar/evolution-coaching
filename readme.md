@@ -1,5 +1,7 @@
 # evolution-coaching
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/andreiconstantinescu/evolution-coaching.svg)](https://greenkeeper.io/)
+
 Simple static website. Nothing fancy.
 
 ### Setup
